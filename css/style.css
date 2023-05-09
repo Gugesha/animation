@@ -1,0 +1,44 @@
+.background-image{
+    background-image: url('../image/sky.jpg');
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.bird{
+    margin-top: 600px;
+    animation-name: bird;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    /* position: absolute; */
+}
+@keyframes bird{
+    from {transform: translateX(0);}
+    to {transform: translateX(1500px)}
+}
+.sun{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation-name: sun;
+    animation-duration: 30s;
+    animation-iteration-count: infinite ;
+}
+@keyframes sun{
+    from{transform: translateY(0);} 
+    to {transform: translateY(400px);}
+    from{opacity: 100%;}
+    to{opacity: 50%;}
+    
+}
+.clouds{
+    position: absolute;
+    left:0;
+    top:400px;
+    z-index: 3;
+    animation: clouds 30s infinite;
+}
+@keyframes clouds{
+    from{transform: translateX(0);}
+    to {transform: translateX(100%);}
+}
